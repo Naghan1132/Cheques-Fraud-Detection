@@ -2,7 +2,7 @@
 from nbconvert.preprocessors import ExecutePreprocessor
 import nbformat
 
-def execute_notebook(notebook_path, output_path):
+def execute_notebook(notebook_path):
     # Charger le notebook
     with open(notebook_path, 'r', encoding='utf-8') as notebook_file:
         notebook_content = nbformat.read(notebook_file, as_version=4)
@@ -21,8 +21,7 @@ if __name__ == '__main__':
     #output_path = 'rapport.html'
 
     # Exécutez le notebook et enregistrez le résultat
-    execute_notebook('preprocessing/preprocessing.ipynb')
-    execute_notebook('split_data/split_train_test.ipynb')
+    execute_notebook('preprocessing\\preprocessing.ipynb')
     execute_notebook('preprocessing/smote.ipynb')
     execute_notebook('preprocessing/undersampling.ipynb')
     execute_notebook('classification/classification.ipynb')
