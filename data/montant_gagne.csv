@@ -1,0 +1,8 @@
+,Random_Forest,xgb_model
+simple,60730.04,72957.88
+undersampling_1,7454.11,26993.69
+undersampling_3,42703.92,104486.36
+undersampling_5,16650.96,83173.73
+smote_1,204.51,-63765.5
+smote_3,3887.42,-71519.6
+smote_5,3029.44,4957.34
